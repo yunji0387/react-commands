@@ -3,8 +3,9 @@
 ## Deploy react app as github pages
 https://www.pluralsight.com/guides/deploying-github-pages-with-create-react-app
 
-https://dev.to/janjibdev/problem-with-react-router-app-and-github-pages-lij
-
+- HashRouter
+  https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages
+  https://medium.com/@bennirus/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2
 
 - React gh-pages take too long to deploy
   ```html
