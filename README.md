@@ -45,18 +45,10 @@
 <!-- /MarkdownTOC -->
 </details>
 
-### React in JS file
-#### Import react js file in html
+### React 101
 <details close>
 <summary><b>(click to expand/hide)</b></summary>
 <!-- MarkdownTOC -->
-
-```html
-<script src="./src/index.js" type="text/jsx"></script>
-```
-
-<!-- /MarkdownTOC -->
-</details>
 
 #### Import libraries in js file
 <details close>
@@ -263,6 +255,11 @@ root.render(
     
     export default GameCard;
     ```
+
+<!-- /MarkdownTOC -->
+</details>
+
+---
 
 <!-- /MarkdownTOC -->
 </details>
