@@ -1,5 +1,272 @@
 # React Commands
 
+### Creating React App
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+- In bash
+    ```bash
+      npx create-react-app <app name>
+    ```
+
+<!-- /MarkdownTOC -->
+</details>
+
+### Start development server
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+- In bash located into the react app directory
+    ```bash
+      cd <app name>
+    ```
+    ```bash
+      npm start
+    ```
+
+<!-- /MarkdownTOC -->
+</details>
+
+### Upgrade React App version
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+- In bash located into the react app directory
+    ```bash
+      cd <app name>
+    ```
+    ```bash
+      npm install react-scripts@latest
+    ```
+
+<!-- /MarkdownTOC -->
+</details>
+
+### React in JS file
+#### Import react js file in html
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+```html
+<script src="./src/index.js" type="text/jsx"></script>
+```
+
+<!-- /MarkdownTOC -->
+</details>
+
+#### Import libraries in js file
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+```
+
+<!-- /MarkdownTOC -->
+</details>
+
+#### Inject code to an element (ex. div/h1/p)
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <h1>
+    Hello World
+  </h1>
+);
+
+```
+
+<!-- /MarkdownTOC -->
+</details>
+
+#### Calling js variable in an element (ex. div/h1/p)
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+```javascript
+import React from "react";
+
+function Footer() {
+  const currentYear = new Date().getFullYear();
+  return (
+    <footer>
+      <p>Copyright ⓒ {currentYear}</p>
+    </footer>
+  );
+}
+
+export default Footer;
+```
+
+<!-- /MarkdownTOC -->
+</details>
+
+#### React function with parameter (React props)
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Card(props) {
+  return (
+    <div>
+      <h2>{props.name}</h2>
+      <img src={props.img} alt="avatar_img" />
+      <p>{props.tel}</p>
+      <p>{props.email}</p>
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <div>
+    <h1>My Contacts</h1>
+    <Card
+      name="Beyonce"
+      img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
+      tel="+123 456 789"
+      email="b@beyonce.com"
+    />
+    <Card
+      name="Jack Bauer"
+      img="https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg"
+      tel="+7387384587"
+      email="jack@nowhere.com"
+    />
+  </div>,
+  document.getElementById("root")
+);
+
+```
+
+<!-- /MarkdownTOC -->
+</details>
+
+#### useState function
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+- const [state, setState] = useState(initialState);
+    ```javascript
+    import React, { useState } from "react";
+    
+    function App() {
+      const [count, setCount] = useState(0);
+    
+      function increase() {
+        setCount(count + 1);
+      }
+    
+      function decrease() {
+        setCount(count - 1);
+      }
+    
+      return (
+        <div className="container">
+          <h1>{count}</h1>
+          <button onClick={decrease}>-</button>
+          <button onClick={increase}>+</button>
+        </div>
+      );
+    }
+    
+    export default App;
+    ```
+
+<!-- /MarkdownTOC -->
+</details>
+
+#### Appending element into a state array
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+```javascript
+  const [inputText, setInputText] = useState("");
+  const [items, setItems] = useState([]);
+
+  function handleChange(event) {
+    const newValue = event.target.value;
+    setInputText(newValue);
+  }
+
+  function addItem() {
+    setItems(prevItems => {
+      return [...prevItems, inputText];
+    });
+    setInputText("");
+  }
+```
+
+<!-- /MarkdownTOC -->
+</details>
+
+#### Adding link to a react component
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
+1. First install react-router-dom
+    ```bash
+    npm install react-router-dom
+    ```
+2. In index.js import BrowserRouter
+    ```javascript
+    import React from 'react';
+    import ReactDOM from 'react-dom/client';
+    import { BrowserRouter } from 'react-router-dom'
+    import App from './App';
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+    );
+    ```
+4. Finally add <Link> to the desired react component
+   ```javascript
+    import React from 'react';
+    import { Link } from 'react-router-dom';
+    import './GameCard.css';
+    
+    const GameCard = (props) => {
+      return (
+        <Link to='/about' className="game-card">
+          <img className="game-card__image" src={props.imageUrl} alt={props.imgTitle} />
+          <div className="game-card__details">
+            <h2 className="game-card__title">{props.title}</h2>
+            <p className="game-card__description">{props.description}</p>
+          </div>
+        </Link>
+      );
+    };
+    
+    export default GameCard;
+    ```
+
+<!-- /MarkdownTOC -->
+</details>
+
 ### Deploy react app as github pages
 <details close>
 <summary><b>(click to expand/hide)</b></summary>
