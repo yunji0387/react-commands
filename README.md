@@ -1,6 +1,10 @@
 # React Commands
 
-## Deploy react app as github pages
+### Deploy react app as github pages
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
 1. Make sure to have the react app push to GitHub
 2. install npm packages : gh-pages
    ```bash
@@ -67,14 +71,8 @@
     -  [Question: My github webpage is not updating after changes are made.](https://github.com/orgs/community/discussions/19713)
      - [Question: How long does it take for GitHub page to show changes after changing index.html](https://stackoverflow.com/questions/24851824/how-long-does-it-take-for-github-page-to-show-changes-after-changing-index-html)
 
-- React gh-pages take too long to deploy
-  ```html
-  <meta http-equiv='cache-control' content='no-cache'> 
-  <meta http-equiv='expires' content='0'> 
-  <meta http-equiv='pragma' content='no-cache'>
-  ```
-  - https://github.com/orgs/community/discussions/19713
-  - https://stackoverflow.com/questions/24851824/how-long-does-it-take-for-github-page-to-show-changes-after-changing-index-html
+<!-- /MarkdownTOC -->
+</details>
 
-formik tutorial
-- https://formik.org/docs/tutorial
+### Form NPM Package (Formik Tutorial)
+- [Formik Tutorial Source](https://formik.org/docs/tutorial)
