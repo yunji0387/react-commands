@@ -1,5 +1,10 @@
 # React Commands
 
+## How to create & run first React App
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
+
 ### Creating React App
 <details close>
 <summary><b>(click to expand/hide)</b></summary>
@@ -41,6 +46,9 @@
     ```bash
       npm install react-scripts@latest
     ```
+
+<!-- /MarkdownTOC -->
+</details>
 
 <!-- /MarkdownTOC -->
 </details>
@@ -338,5 +346,11 @@ root.render(
 <!-- /MarkdownTOC -->
 </details>
 
-### Form NPM Package (Formik Tutorial)
-- [Formik Tutorial Source](https://formik.org/docs/tutorial)
+
+## External Libraries
+### Form (Formik)
+- [Formik Tutorial](https://formik.org/docs/tutorial)
+
+### Prebuilt Components (Chakra UI) 
+- Chakra UI provides prebuilt components to help you build your projects faster.
+- [Documentation](https://chakra-ui.com/docs/components)
