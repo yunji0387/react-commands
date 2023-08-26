@@ -354,3 +354,6 @@ root.render(
 ### Prebuilt Components (Chakra UI) 
 - Chakra UI provides prebuilt components to help you build your projects faster.
 - [Documentation](https://chakra-ui.com/docs/components)
+
+### Input Autocomplete (Material UI)
+- [Documentation](https://mui.com/material-ui/react-autocomplete/)
