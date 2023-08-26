@@ -51,7 +51,7 @@
    npm run deploy
    ```
 9. After step 8 your react app is starting to deploy to GitHub pages, please wait a few moments.
-   ![githubDeployPage](githubDeployPage.png)
+   ![githubDeployPage](./images/githubDeployPage.png)
 11. I have experienced very slow deployment on my GitHub pages, and looking online for solution I have found this, but I do not know if this solution helps speed up the deployment process at all.
   - On public/index.html, add these meta tags:
     ```html
@@ -59,13 +59,13 @@
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
     ```
-
-
-https://www.pluralsight.com/guides/deploying-github-pages-with-create-react-app
-
-- HashRouter
-  https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages
-  https://medium.com/@bennirus/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2
+   - Sources I looked at: [source1](https://github.com/orgs/community/discussions/19713), [source2](https://stackoverflow.com/questions/24851824/how-long-does-it-take-for-github-page-to-show-changes-after-changing-index-html)
+12. Sources (If you still have troubles these links may help):
+    - [Deploying Github Pages with create-react-app](https://www.pluralsight.com/guides/deploying-github-pages-with-create-react-app)
+    -  [Deploying a create-react-app with routing to GitHub pages](https://medium.com/@bennirus/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2)
+    -  [Question: React Router not working with Github Pages](https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages)
+    -  [Question: My github webpage is not updating after changes are made.](https://github.com/orgs/community/discussions/19713)
+     - [Question: How long does it take for GitHub page to show changes after changing index.html](https://stackoverflow.com/questions/24851824/how-long-does-it-take-for-github-page-to-show-changes-after-changing-index-html)
 
 - React gh-pages take too long to deploy
   ```html
