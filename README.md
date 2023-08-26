@@ -355,5 +355,7 @@ root.render(
 - Chakra UI provides prebuilt components to help you build your projects faster.
 - [Documentation](https://chakra-ui.com/docs/components)
 
-### Input Autocomplete (Material UI)
-- [Documentation](https://mui.com/material-ui/react-autocomplete/)
+### Input Autocomplete (Material UI & Google Maps API)
+- [MUI Documentation](https://mui.com/material-ui/react-autocomplete/)
+- [Google Maps Place Autocomplete Documentation](https://developers.google.com/maps/documentation/javascript/place-autocomplete)
+- [Google Maps Geocoding API overview](https://developers.google.com/maps/documentation/geocoding/overview#ReverseGeocoding)
