@@ -355,6 +355,11 @@ root.render(
 - [@react-google-maps/api npm package](https://www.npmjs.com/package/@react-google-maps/api)
 - [use-places-autocomplete](https://www.npmjs.com/package/use-places-autocomplete)
 - [@reach/combobox](https://www.npmjs.com/package/@reach/combobox)
+  - Issue: Reach UI currently does not support React 18.
+  - Solution (choose 1):
+        1. Downgrade React version
+        2. Force install @reach/combobox(might not work)
+        3. Find another package 
 
 <!-- /MarkdownTOC -->
 </details>
