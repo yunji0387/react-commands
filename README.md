@@ -359,7 +359,9 @@ root.render(
   - Solution (choose 1):
     1. Downgrade React version
     2. Force install @reach/combobox(might not work)
-    3. Find another package 
+    3. Find another package
+    4. Used HTML built-in tag <select>
+    5. [Material UI auto-complete](https://mui.com/material-ui/react-autocomplete/) (Google Maps place section, sample code available).
 
 
 <!-- /MarkdownTOC -->
