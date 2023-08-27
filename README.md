@@ -346,8 +346,9 @@ root.render(
 <!-- /MarkdownTOC -->
 </details>
 
-<!-- /MarkdownTOC -->
-</details>
+<details close>
+<summary><b>(click to expand/hide)</b></summary>
+<!-- MarkdownTOC -->
 
 ### Use Place Autocomplete in React
 - [video tutorial](https://www.youtube.com/watch?v=BL2XVTqz9Ek)
