@@ -361,6 +361,12 @@ root.render(
     2. Force install @reach/combobox(might not work)
     3. Find another package
     4. [Mui package - google maps place sample included](https://mui.com/material-ui/react-autocomplete/)
+       - ```bash
+         npm install @mui/material @emotion/react @emotion/styled
+         ```
+       - ```bash
+         npm install @mui/icons-material
+         ```
        - [additional required package - autosuggest-highlight](https://www.npmjs.com/package/autosuggest-highlight)
  
 <!-- /MarkdownTOC -->
