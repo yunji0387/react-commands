@@ -346,6 +346,11 @@ root.render(
 <!-- /MarkdownTOC -->
 </details>
 
+### Use Place Autocomplete in React
+- [video tutorial](https://www.youtube.com/watch?v=BL2XVTqz9Ek)
+- [@react-google-maps/api npm package](https://www.npmjs.com/package/@react-google-maps/api)
+- [use-places-autocomplete](https://www.npmjs.com/package/use-places-autocomplete)
+- [@reach/combobox](https://www.npmjs.com/package/@reach/combobox)
 
 ## External Libraries
 ### Form (Formik)
