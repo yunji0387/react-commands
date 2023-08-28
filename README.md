@@ -368,6 +368,9 @@ root.render(
          npm install @mui/icons-material
          ```
        - [additional required package - autosuggest-highlight](https://www.npmjs.com/package/autosuggest-highlight)
+         - ```bash
+           npm install autosuggest-highlight --save
+           ```
        - [changing MUI search bar style](https://smartdevpreneur.com/override-textfield-border-color-in-material-ui/)
  
 <!-- /MarkdownTOC -->
