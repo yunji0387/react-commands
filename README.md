@@ -373,6 +373,7 @@ root.render(
            ```
        - [changing MUI search bar style](https://smartdevpreneur.com/override-textfield-border-color-in-material-ui/)
     5. (Worked) using [react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
+       - [react-places-autocomplete GitHub Repo](https://github.com/hibiken/react-places-autocomplete)
        - with [react-script-hook](https://www.npmjs.com/package/react-script-hook) to load script in react component rather than in index.html.
        - [video tutorial](https://www.youtube.com/watch?v=GeNUKYPEieA&t=2s) 
 <!-- /MarkdownTOC -->
